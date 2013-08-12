@@ -39,8 +39,7 @@ module Calculator {
 
 			delimiter = delimiters.pop();
 
-			newInput = [];
-			input.forEach(x => x.split(delimiter).forEach(y => newInput.push(y)));
+			newInput = Array.prototype.concat.apply([], input.map(x => x.split(delimiter)));
 
 			return splitOnDelimiters(newInput, delimiters);
 	}

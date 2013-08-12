@@ -41,12 +41,9 @@ var Calculator;
 
         delimiter = delimiters.pop();
 
-        newInput = [];
-        input.forEach(function (x) {
-            return x.split(delimiter).forEach(function (y) {
-                return newInput.push(y);
-            });
-        });
+        newInput = Array.prototype.concat.apply([], input.map(function (x) {
+            return x.split(delimiter);
+        }));
 
         return splitOnDelimiters(newInput, delimiters);
     }

@@ -4,10 +4,10 @@ using Project;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace GameTests
+namespace UnitTests
 {
 	[TestClass]
-	public class UnitTest1
+	public class GameTests
 	{
 		[TestMethod]
 		public void TestCanCreateGame()

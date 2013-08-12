@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Web
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project", "Project\Project.csproj", "{997A85A7-3066-4240-8D0A-3E1132352B9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameTests", "GameTests\GameTests.csproj", "{F265052F-531F-4971-9496-4744C0712581}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "GameTests\UnitTests.csproj", "{F265052F-531F-4971-9496-4744C0712581}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

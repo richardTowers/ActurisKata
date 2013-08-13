@@ -47,5 +47,9 @@ var Calculator;
 
         return splitOnDelimiters(newInput, delimiters);
     }
+
+    function flatten(input) {
+        return Array.prototype.concat.apply([], input);
+    }
 })(Calculator || (Calculator = {}));
 //@ sourceMappingURL=app.js.map

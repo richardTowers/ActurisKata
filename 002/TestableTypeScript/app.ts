@@ -39,8 +39,12 @@ module Calculator {
 
 			delimiter = delimiters.pop();
 
-			newInput = Array.prototype.concat.apply([], input.map(x => x.split(delimiter)));
+			newInput = flatten(input.map(x => x.split(delimiter)));
 
 			return splitOnDelimiters(newInput, delimiters);
+	}
+
+	function flatten<T>(input: T[][]): T[] {
+		return Array.prototype.concat.apply([], input);
 	}
 }

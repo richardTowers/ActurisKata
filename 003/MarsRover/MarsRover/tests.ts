@@ -79,4 +79,18 @@ describe('Mars Rover', () => {
 		expect(rover.position.y).toBe(0);
 	});
 
+	it('Should be more capable than Zoolander', () => {
+		
+		var position = { x: 0, y: 0 };
+
+		var rover = new Rover(position, 'N');
+
+		rover.move('l');
+		rover.move('f');
+
+		expect(rover.position.x).toBe(-1);
+		expect(rover.position.y).toBe(0);
+
+	});
+
 });

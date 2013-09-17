@@ -54,5 +54,19 @@ describe('Mars Rover', function () {
         expect(rover.position.x).toBe(-2);
         expect(rover.position.y).toBe(0);
     });
+
+    it('Should move east when facing east and told to move forwards', function () {
+        var position = { x: 0, y: 0 };
+
+        var rover = new Rover(position, 'E');
+
+        rover.move('f');
+        expect(rover.position.x).toBe(1);
+        expect(rover.position.y).toBe(0);
+
+        rover.move('f');
+        expect(rover.position.x).toBe(2);
+        expect(rover.position.y).toBe(0);
+    });
 });
 //@ sourceMappingURL=tests.js.map

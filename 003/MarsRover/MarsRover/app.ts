@@ -11,7 +11,8 @@ interface IVelocity {
 var directionMap = {
 	
 	'N': { xSpeed: 0, ySpeed: -1 },
-	'S': { xSpeed: 0, ySpeed: 1 }
+	'S': { xSpeed: 0, ySpeed: 1 },
+	'W': { xSpeed: -1, ySpeed: 0 }
 
 };
 
@@ -26,6 +27,7 @@ class Rover {
 
 	move(instructions: string) {
 		this.position.y += this.velocity.ySpeed;
+		this.position.x += this.velocity.xSpeed;
 	}
 
 	position: IPosition;

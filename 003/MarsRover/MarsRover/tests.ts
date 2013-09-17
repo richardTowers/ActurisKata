@@ -91,6 +91,15 @@ describe('Mars Rover', () => {
 		expect(rover.position.x).toBe(-1);
 		expect(rover.position.y).toBe(0);
 
+		// Reset the rover
+		rover = new Rover(position, 'N');
+		rover.move('l');
+		rover.move('l');
+		rover.move('f');
+		
+		expect(rover.position.x).toBe(0);
+		expect(rover.position.y).toBe(1);
+
 	});
 
 });

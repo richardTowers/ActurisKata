@@ -1,5 +1,6 @@
 var directionMap = {
-    'N': { xSpeed: 0, ySpeed: -1 }
+    'N': { xSpeed: 0, ySpeed: -1 },
+    'S': { xSpeed: 0, ySpeed: 1 }
 };
 
 var Rover = (function () {
@@ -8,7 +9,7 @@ var Rover = (function () {
         this.velocity = directionMap[direction];
     }
     Rover.prototype.move = function (instructions) {
-        this.position.y--;
+        this.position.y += this.velocity.ySpeed;
     };
     return Rover;
 })();

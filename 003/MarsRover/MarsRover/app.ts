@@ -38,6 +38,10 @@ class Rover {
 				this.position.y -= this.velocity.ySpeed;
 				this.position.x -= this.velocity.xSpeed;
 				break;
+			case 'l':
+				this.velocity.ySpeed = 0;
+				this.velocity.xSpeed = -1;
+				break;
 
 		}
 	}

@@ -1,5 +1,6 @@
 var directionMap = {
     'N': { xSpeed: 0, ySpeed: -1 },
+    'E': { xSpeed: 1, ySpeed: 0 },
     'S': { xSpeed: 0, ySpeed: 1 },
     'W': { xSpeed: -1, ySpeed: 0 }
 };

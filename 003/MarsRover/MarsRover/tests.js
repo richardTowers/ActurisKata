@@ -13,7 +13,7 @@ describe('Mars Rover', function () {
         expect(rover.position).toBe(position);
     });
 
-    it('Should move north when facing north and told to move forwards', function () {
+    it('Should move north / south when facing north and told to move forwards / backwards', function () {
         var position = { x: 0, y: 0 };
 
         var rover = new Rover(position, 'N');
@@ -22,9 +22,9 @@ describe('Mars Rover', function () {
         expect(rover.position.x).toBe(0);
         expect(rover.position.y).toBe(-1);
 
-        rover.move('f');
+        rover.move('b');
         expect(rover.position.x).toBe(0);
-        expect(rover.position.y).toBe(-2);
+        expect(rover.position.y).toBe(0);
     });
 
     it('Should move south when facing south and told to move forwards', function () {

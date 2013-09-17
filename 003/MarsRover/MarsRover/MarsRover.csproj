@@ -21,6 +21,12 @@
     <Content Include="app.js">
       <DependentUpon>app.ts</DependentUpon>
     </Content>
+    <Content Include="Defenitions\jasmine.d.ts" />
+    <Content Include="karma.config.js" />
+    <Content Include="tests.js">
+      <DependentUpon>tests.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="tests.ts" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />

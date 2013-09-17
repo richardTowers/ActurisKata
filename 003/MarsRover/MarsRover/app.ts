@@ -27,8 +27,19 @@ class Rover {
 	}
 
 	move(instructions: string) {
-		this.position.y += this.velocity.ySpeed;
-		this.position.x += this.velocity.xSpeed;
+
+		switch(instructions) {
+
+			case 'f':
+				this.position.y += this.velocity.ySpeed;
+				this.position.x += this.velocity.xSpeed;
+				break;
+			case 'b':
+				this.position.y -= this.velocity.ySpeed;
+				this.position.x -= this.velocity.xSpeed;
+				break;
+
+		}
 	}
 
 	position: IPosition;

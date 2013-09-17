@@ -11,8 +11,16 @@ var Rover = (function () {
         this.velocity = directionMap[direction];
     }
     Rover.prototype.move = function (instructions) {
-        this.position.y += this.velocity.ySpeed;
-        this.position.x += this.velocity.xSpeed;
+        switch (instructions) {
+            case 'f':
+                this.position.y += this.velocity.ySpeed;
+                this.position.x += this.velocity.xSpeed;
+                break;
+            case 'b':
+                this.position.y -= this.velocity.ySpeed;
+                this.position.x -= this.velocity.xSpeed;
+                break;
+        }
     };
     return Rover;
 })();

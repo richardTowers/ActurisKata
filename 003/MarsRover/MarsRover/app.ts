@@ -24,7 +24,7 @@ class Rover {
 	}
 
 	move(instructions: string) {
-	
+		this.position.y--;
 	}
 
 	position: IPosition;

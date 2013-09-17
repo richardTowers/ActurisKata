@@ -8,6 +8,7 @@ var Rover = (function () {
         this.velocity = directionMap[direction];
     }
     Rover.prototype.move = function (instructions) {
+        this.position.y--;
     };
     return Rover;
 })();
